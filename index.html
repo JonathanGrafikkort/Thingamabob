@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>En Enkel Regndans-app - Official Website</title>
+  <link rel="stylesheet" href="CSS/Gadinkidonk.css" />
+</head>
+<body>
+  <div class="dark-mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkModeSwitch" />
+      <span class="slider round"></span>
+    </label>
+    <span class="label-text">Light Mode</span>
+  </div>
+  
+  <header class="hero">
+    <div class="container">
+      <h1>En Enkel Regndans-app</h1>
+      <p class="tagline">Enter the world. Fight the legend.</p>
+      <a href="#trailer" class="btn">Watch Trailer</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <h2>Game Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Epic Battles</h3>
+          <p>Engage in thrilling real-time combat against mythical creatures (White rectangles).</p>
+        </div>
+        <div class="feature">
+            <h3>Stunning Graphics</h3>
+            <p>Explore breathtaking environments powered by cutting-edge visuals and effects (White rectangles).</p>
+          </div>
+        <div class="feature">
+          <h3>Immersive Story</h3>
+          <p>Experience a deep narrative with choices that matter (Whether or not to avoid the white rectangles).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trailer" id="trailer">
+    <div class="container">
+      <h2>Official Trailer</h2>
+        <video width="640" height="400" controls>
+            <source src="Gabriels Liv Intro.mp4" type="video/mp4">
+          </video>
+    </div>
+  </section>
+
+  <section class="screenshot">
+    <div class="container">
+      <h2>In-Game Screenshot</h2>
+      <img src="Skärmbild 2025-05-05 092538.png" alt="Gameplay Screenshot" class="screenshot-img" />
+    </div>
+  </section>  
+
+  <section class="get-game">
+    <div class="container">
+      <h2>Ready to Play?</h2>
+      <p>Download the game now and start your adventure.</p>
+      <a href="https://jogmdillman.itch.io/en-enkel-regndans-app" class="btn large">Get the Game</a>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gadinkidonk Studio. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://www.youtube.com/@Its_Henrico">YouTube</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggleSwitch = document.getElementById('darkModeSwitch');
+  
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      toggleSwitch.checked = true;
+    }
+  
+    toggleSwitch.addEventListener('change', () => {
+      if (toggleSwitch.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'enabled');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', 'disabled');
+      }
+    });
+  </script>
+  
+</body>
+</html>
