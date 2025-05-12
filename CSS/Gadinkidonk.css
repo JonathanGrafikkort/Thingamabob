@@ -218,7 +218,6 @@ body.dark-mode {
   color: #000000;
 }
 
-body.dark-mode .feature,
 body.dark-mode .features,
 body.dark-mode .screenshot,
 body.dark-mode footer {
@@ -239,5 +238,9 @@ body.dark-mode .trailer {
 body.dark-mode .get-game{
   background: #ff00dd;
   color: rgb(0, 0, 0);
+}
+
+body.dark-mode .feature {
+  background-color: #ececec
 }
   
